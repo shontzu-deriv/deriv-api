@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>React App</title>
+  </head>
+  <body>
+    <h1>Learn React</h1>
+    <header>
+      <button id="ticks" class="submitBtn">Subscribe Tickstream</button>
+      <button id="ticks-unsubscribe" class="resetBtn">Unsubscribe Tickstream</button>
+      <button id="ticks-history">Get Ticks History</button>
+      <br />
+      <button id="activeSymbols">Get Active Symbols</button>
+      <button id="contractsForSymbol">Get contracts for symbol</button>
+      <br />
+      <button id="proposal" class="submitBtn">Subscribe proposal</button>
+      <button id="proposal-unsubscribe" class="resetBtn">Unsubscribe proposal</button>
+      <br />
+      <button id="keep_alive" class="submitBtn">Keep Alive</button>
+      <button id="end_call" class="resetBtn">End Call</button>
+    </header>
+  </body>
+  <script type="module" src="./api/tickstream.js"></script>
+  <script type="module" src="./api/contract-for-symbol.js"></script>
+  <script type="module" src="./api/get-active-symbols.js"></script>
+  <script type="module" src="./api/proposal.js"></script>
+  <script type="module" src="./api/keep-alive.js"></script>
+</html>
